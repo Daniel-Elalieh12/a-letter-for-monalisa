@@ -197,6 +197,16 @@ html.js .reveal.in{opacity:1;transform:none}
 .thanks.show{opacity:1}
 .footer{text-align:center;margin-top:54px;color:var(--ink-soft);font-family:var(--f-label);font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;opacity:.72}
 
+/* phone: widen the text column so lines read full-width like the laptop */
+@media (max-width:560px){
+  .wrap{padding-left:12px;padding-right:12px}
+  .letter{padding:26px 18px}
+  .letter p{font-size:1.07rem}
+  .manifest{padding:24px 16px}
+  .page-border{inset:7px}
+  .sec-head .t{font-size:clamp(2rem,9vw,3rem)}
+}
+
 #burst{position:fixed;inset:0;pointer-events:none;z-index:300;overflow:hidden}
 
 /* ===== unveil cover (sealed envelope) ===== */
